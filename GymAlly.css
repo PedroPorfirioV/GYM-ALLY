@@ -54,6 +54,8 @@ a{
 text-decoration: none;
 color:#31241E ;
 font-family: "Open Sans", sans-serif;
+font-weight: bolder;
+
 }
 
 .container {
@@ -66,7 +68,7 @@ font-family: "Open Sans", sans-serif;
     height: 350px;
     width: 1200px;
     color: rgb(0, 0, 0);
-    background-image:url(fundo.jpg);
+    background-image:url(PlatoIA.jpg);
     background-size: cover;
   }
   
@@ -84,4 +86,34 @@ font-family: "Open Sans", sans-serif;
     font-family: "Open Sans", sans-serif;
     color: rgb(0, 0, 0);
   }
+
+  input{
+    position:relative;
+    width: 400px;
+    padding:10px 10px;
+    border:none;
+    outline: none;
+    background:#D1C8C1;
+    color:black ;
+    font-weight: bold;
+    font-size: 1.00rem;
+        
+    }
  
+    .btn{
+        color:white;
+        font-size: 25px;
+        margin-bottom: 30px;
+        background-color: #D1C8C1;
+        font-weight: bold;
+        border-radius: 20px;
+        outline: 0px;
+        border:0px;
+        
+    }
+    .btn:hover{
+        background-color: #8a8785;
+        box-shadow: 0px 0px 10px #8a8785;
+        transform: translate(0px, -5px);
+        transition:transform 0.5s;
+    }
