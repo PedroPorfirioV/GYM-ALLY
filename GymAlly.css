@@ -102,18 +102,36 @@ font-weight: bolder;
  
     .btn{
         color:white;
-        font-size: 25px;
-        margin-bottom: 30px;
+        width: 100px;
+        height: 35px;
+        justify-content: center;
+       display:flex ;
         background-color: #D1C8C1;
         font-weight: bold;
         border-radius: 20px;
         outline: 0px;
         border:0px;
-        
+    }
+
+    .btn, p {
+        font-size: 15px;
+        margin-top: 7px;
+        margin-bottom: 0;
     }
     .btn:hover{
         background-color: #8a8785;
         box-shadow: 0px 0px 10px #8a8785;
         transform: translate(0px, -5px);
         transition:transform 0.5s;
+    }
+
+    .fala1 p{
+    text-align: left;
+    width: 40%;
+    margin-top: 15px;
+    margin-left: 75px;
+    height: 10%;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    align-items: end;
     }
