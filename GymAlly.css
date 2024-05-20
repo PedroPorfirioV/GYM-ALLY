@@ -45,6 +45,8 @@ body{
     justify-content: center;
 }
 
+
+
 .titulo {
       font-family: "Open Sans", sans-serif;
       color: #31241E ;
@@ -78,13 +80,34 @@ font-weight: bolder;
     height: 100%;
   }
 
-  .banner .container p {
-    width: 30%;
-    margin: 50%;
-    padding: 35%;
-    font-size: 30px;
+  .container1 {
+    display: flex;
+    width: 120%;
+    transform: translate(90%,-15%);
     font-family: "Open Sans", sans-serif;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  .banner1 {
+    height: 300px;
+    width: 550px;
     color: rgb(0, 0, 0);
+    background-image:url(conceitoimg.jpg);
+    background-size: cover;
+    transform: translate(-60%,3%);
+  }
+  
+  .banner1 .container1 {
+    justify-content: left;
+    align-items: center;
+    height: 50%;
+  }
+
+  .container1 .titu{
+    display: flex;
+    margin-right: 585px;
   }
 
   input{
@@ -106,7 +129,7 @@ font-weight: bolder;
         height: 35px;
         justify-content: center;
         align-items: center;
-       display:flex ;
+        display:flex ;
         background-color: #D1C8C1;
         font-weight: bold;
         border-radius: 20px;
@@ -126,6 +149,7 @@ font-weight: bolder;
         transition:transform 0.5s;
     }
 
+
     .fala1 p{
     text-align: left;
     width: 40%;
@@ -134,9 +158,47 @@ font-weight: bolder;
     height: 10%;
     font-size: 20px;
     font-family: "Open Sans", sans-serif;
-    align-items: end;
+    text-align: center;
     }
-
+    .fala1 {
+        display: flex;
+    }
     .sublinhe{
         text-decoration:underline;
     }
+
+    .footer {
+        background-color: #8f8f8f;
+        height: 75px;
+        color: #fff;
+        display: flex;
+        font-size: 15px;
+      }
+      
+      .footer .container {
+        justify-content: center;
+        text-align: center;
+      }
+      
+      .footer .container .version {
+        font-size: 12px;
+      }
+
+      .footer1 {
+        background-color: #8f8f8f;
+        height: 75px;
+        width: 100%;
+        color: #fff;
+        display: flex;
+        font-size: 100px;
+      }
+      
+      .footer1 .container {
+        justify-content: center;
+        text-align: center;
+      }
+      
+      .footer1 .container .version {
+        font-size: 12px;
+      }
+    
