@@ -105,9 +105,41 @@ font-weight: bolder;
     height: 50%;
   }
 
+  .banner2 {
+    height: 300px;
+    width: 550px;
+    color: rgb(0, 0, 0);
+    background-image:url(academiaimg.jpg);
+    background-size: cover;
+    transform: translate(-60%,3%);
+  }
+  
+  .banner2 .container1 {
+    justify-content: left;
+    align-items: center;
+    height: 50%;
+  }
+
+  .banner3 {
+    height: 400px;
+    width: 400px;
+    color: rgb(0, 0, 0);
+    background-image:url(sobreimg.jpeg);
+    background-size: cover;
+    transform: translate(-70%,25%);
+  }
+  
+  .banner3 .container1 {
+    justify-content: left;
+    align-items: center;
+    height: 50%;
+    transform: translate(100%,-35%);
+  }
+
   .container1 .titu{
     display: flex;
-    margin-right: 585px;
+    margin-right: 250px;
+
   }
 
   input{
@@ -154,14 +186,16 @@ font-weight: bolder;
     text-align: left;
     width: 40%;
     margin-top: 15px;
-    margin-left: 75px;
+    margin-left: 100px;
     height: 10%;
     font-size: 20px;
     font-family: "Open Sans", sans-serif;
     text-align: center;
+    display: flex;
     }
     .fala1 {
         display: flex;
+        text-align: center;
     }
     .sublinhe{
         text-decoration:underline;
