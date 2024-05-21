@@ -109,7 +109,7 @@ font-weight: bolder;
     height: 300px;
     width: 550px;
     color: rgb(0, 0, 0);
-    background-image:url(academiaimg.jpg);
+    background-image:url(academiaomg.avif);
     background-size: cover;
     transform: translate(-60%,3%);
   }
@@ -120,28 +120,10 @@ font-weight: bolder;
     height: 50%;
   }
 
-  .banner3 {
-    height: 400px;
-    width: 400px;
-    color: rgb(0, 0, 0);
-    background-image:url(sobreimg.jpeg);
-    background-size: cover;
-    transform: translate(-70%,25%);
-  }
-  
-  .banner3 .container1 {
-    justify-content: left;
-    align-items: center;
-    height: 50%;
-    transform: translate(100%,-35%);
-  }
-
   .container1 .titu{
     display: flex;
-    margin-right: 250px;
-
+    margin-right: 585px;
   }
-
   input{
     position:relative;
     width: 400px;
@@ -235,4 +217,72 @@ font-weight: bolder;
       .footer1 .container .version {
         font-size: 12px;
       }
+
+      .dieta{
+      height: 300px;
+      display: flex;
+      justify-content: space-evenly;
+      }
+
+      .dieta .esquerda{
+        height: 250px;
+        width: 550px;
+        color: rgb(0, 0, 0);
+        background-image:url(dieta1.jpg);
+        background-size: cover;
+        margin-top: 10px;
+      }
+
+
+      .dieta .direita{
+        width: 50%;
+        font-family: "Open Sans", sans-serif;
+      }
     
+      .dieta2{
+        height: 300px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .dieta2 .esquerda{
+        width: 50%;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      .dieta2 .direita{
+        height: 250px;
+        width: 550px;
+        color: rgb(0, 0, 0);
+        background-image:url(dieta2.jpg);
+        background-size: cover;
+      }
+
+      .sobre{
+        height: 300px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .sobre .esquerda{
+        height: 500px;
+        width: 400px;
+        color: rgb(0, 0, 0);
+        background-image:url(sobreimg.jfif);
+        background-size: cover;
+      }
+
+      .sobre .direita{
+        width: 50%;
+        margin-top: 35px;;
+        font-family: "Open Sans", sans-serif;
+        font-size: 22px;
+      }
+
+      .tamanho{
+        height: 250px;
+      }
+
+      .tamanho2{
+        height: 120px;
+      }
