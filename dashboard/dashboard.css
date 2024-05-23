@@ -128,8 +128,8 @@ font-weight: bolder;
     }
 
     .inputUser{
-        width: 400px;
-    padding:10px 10px;
+    width: 610px;
+    height: 35px;
     border:none;
     outline: none;
     background:#D1C8C1;
@@ -137,6 +137,19 @@ font-weight: bolder;
     font-weight: bold;
     font-size: 1.00rem;
     }
+
+    .inputUser2{
+        width: 600px;
+        height: 35px;
+        border:none;
+        outline: none;
+        background:#D1C8C1;
+        color:black ;
+        font-weight: bold;
+        font-size: 15px;
+        transform: translate(-5px,0px);
+        font-family: "Open Sans", sans-serif;
+        }
 
     .box{
         font-size: 25px;
@@ -146,3 +159,33 @@ font-weight: bolder;
     .tata{
         height: 40px;
     }
+
+    .explica{
+        width: 600px;
+        height: 250px;
+        background:#D1C8C1;
+        color:black ;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .footer {
+        background-color: #8f8f8f;
+        width: 1349px;
+        height: 75px;
+        color: #fff;
+        display: flex;
+        font-size: 15px;
+      }
+      
+      .footer .container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .footer .container p{
+        display: flex;
+        justify-content: center;
+        transform: translate(500px,0px);
+        margin-top: 30px;
+      }
+
