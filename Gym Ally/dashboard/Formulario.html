@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href='dashboard.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="NAVMAE">
+        <div class="Nav">
+            <div class="esquerda">
+                <img src="Logo.PNG" alt="">
+                <div class="titulo">
+                <a href="GymAlly.html">Gym</a>
+                <a href="GymAlly.html">Ally</a>
+                </div>
+
+                <a href="Chat.html">Mural</a>
+                <a href="Dashboard.html">Dashboard</a>
+                <a href="Formulario.html">Formulario</a>
+            </div>
+
+            <div class="direita">
+                <div onclick="limparSessao()">
+                    <h3>Sair</h3>
+                </div>
+            </div>
+        </div>
+        <div class="border"></div><br>
+        <center>
+            <div class="tata"></div>
+        <div>
+            <div>
+               
+                    <legend><b class="box">IPersonal</b></legend>
+                    <br>
+                    <div class="inputBox">
+                        <select id="equipe" class="inputUser" required>
+                            <option selected disabled hidden value="">Qual seu objetivo?</option>
+                            <option value="Perder">Perder peso</option>
+                            <option value="Manter">Manter peso</option>
+                            <option value="Ganhar">Ganhar peso</option>
+                        </select>
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <select id="piloto" class="inputUser" required>
+                            <option selected disabled hidden value="">Qual sua altura?</option>
+                            <option value="PP">1.40m até 1.50m</option>
+                            <option value="P">1.51m até 1.60m</option>
+                            <option value="M">1.61m até 1.70m</option>
+                            <option value="G">1.71m até 1.80m</option>
+                            <option value="GG">1.81m até 1.90m</option>
+                            <option value="H">1.91m até 2.00m</option>
+                            <option value="HH">2.01m até 2.10m</option>
+                        </select>
+                    </div>
+                    <br><br>
+                    <div class="inputUser2">
+                        <select id="circuitoSelect" class="inputUser" required>
+                            <option selected disabled hidden value="">Quantos dias você tem disponivel para treinar?</option>
+                            <option value="1">1 dia</option>
+                            <option value="2">2 dias</option>
+                            <option value="3">3 dias</option>
+                            <option value="4">4 dias</option>
+                            <option value="5">5 dias</option>
+                            <option value="6">6 dias</option>
+                            <option value="7">7 dias</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div id="alertMessage" class="alert"></div>
+                    <br>
+                    <input  class="btn" type="submit" name="submit" id="submit">
+                    <br>
+                    <div class="explica"><br>Bem vindo ao IPersonal, após selecionar as alternativas que encaixam no seu objetivo aqui nessa caixa
+                        irá aparecer uma recomendação de treinoe dieta semanal para tentar ao maximo te ajudar em alcansar seus objetivosLorem ipsum dolor sit amet consectetur adipisicing elit. Cumque iusto ea, 
+                        voluptas hic veniam explicabo necessitatibus vel assumenda laborum qui quo</div><br><br>
+
+                </center>
+                        <div class="footer">
+                            <div class="container">
+                              <p>Feito com amor por Pedro Porfirio Vieira &hearts; SPTech &copy; 2024</p>
+                            </div>
+                          </div>
+                    </div>
+                
+            </div>
+        </div>

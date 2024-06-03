@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href='dashboard.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="NAVMAE">
+        <div class="Nav">
+            <div class="esquerda">
+                <img src="Logo.PNG" alt="">
+                <div class="titulo">
+                <a href="GymAlly.html">Gym</a>
+                <a href="GymAlly.html">Ally</a>
+                </div>
+
+                <a href="Chat.html">Mural</a>
+                <a href="Dashboard.html">Dashboard</a>
+                <a href="Formulario.html">Formulario</a>
+            </div>
+
+            <div class="direita">
+                <div onclick="limparSessao()">
+                    <h3>Sair</h3>
+                </div>
+            </div>
+        </div>
+        <div class="border"></div><br>
+
+        <div class="dash">
+            <div id="alerta">
+            </div>
+
+            <div class="btns-dash" id="btnAquario">
+                <!-- O gráfico é chamado de acordo com o id (fk_aquario) do banco  -->
+            </div>
+            <div id="graficos">
+            </div>
+        </div>
+    </div>
