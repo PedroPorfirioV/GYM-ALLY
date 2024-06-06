@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <link rel="stylesheet" href='dashboard.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="NAVMAE">
+        <div class="Nav">
+            <div class="esquerda">
+                <img src="../assets/Logo.PNG" alt="">
+                <div class="titulo">
+                <a href="">Gym</a>
+                <a href="">Ally</a>
+                </div>
+
+                <a href="mural.html">Mural</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="Formulario.html">Formulario</a>
+                <a href="Exercicios.html">Exercicios </a>
+            </div>
+
+            <div class="direita">
+                <div onclick="limparSessao()">
+                    <h3>Sair</h3>
+                </div>
+            </div>
+        </div>
+        <div class="border"></div><br>
+        <center>
+            <div class="tata"></div>
+        <div>
+            <div>
+               
+                    <legend><b class="box">IPersonal</b></legend>
+                    <br>
+                    <div class="inputBox">
+                        <select id="objetivo_ipt" class="inputUser" required>
+                            <option selected disabled hidden value="">Qual seu objetivo?</option>
+                            <option value="Perder">Perder peso</option>
+                            <option value="Manter">Manter peso</option>
+                            <option value="Ganhar">Ganhar peso</option>
+                        </select>
+                    </div>
+                    <br><br>
+                    <div class="genero">
+                        <select id="genero_ipt" class="inputUser" required>
+                            <option selected disabled hidden value="">Qual seu gênero?</option>
+                            <option value="Homem">Homem</option>
+                            <option value="Mulher">Mulher</option>
+                        </select>
+                    </div><br><br>
+                    <div class="altura">
+                        <select id="altura_ipt" class="inputUser" required>
+                            <option selected disabled hidden value="">Qual sua altura?</option>
+                            <option value="PP">1.40m até 1.50m</option>
+                            <option value="P">1.51m até 1.60m</option>
+                            <option value="M">1.61m até 1.70m</option>
+                            <option value="G">1.71m até 1.80m</option>
+                            <option value="GG">1.81m até 1.90m</option>
+                            <option value="H">1.91m até 2.00m</option>
+                            <option value="HH">2.01m até 2.10m</option>
+                        </select>
+                    </div>
+                    <br><br>
+                    <div class="inputUser2">
+                        <select id="dias_ipt" class="inputUser" required>
+                            <option selected disabled hidden value="">Quantos dias você tem disponivel para treinar?</option>
+                            <option value="1">1 dia</option>
+                            <option value="2">2 dias</option>
+                            <option value="3">3 dias</option>
+                            <option value="4">4 dias</option>
+                            <option value="5">5 dias</option>
+                            <option value="6">6 dias</option>
+                            <option value="7">7 dias</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div id="alertMessage" class="alert"></div>
+                    <br>
+                    <button onclick="calcular()" class="btn">Enviar</button>
+                    <br>
+                    <div class="explica"><br>Bem vindo ao IPersonal, após selecionar as alternativas que encaixam no seu objetivo, aqui nessa caixa
+                        irá aparecer uma recomendação de treino e dieta semanal para tentar ao maximo te ajudar a alcansar seus objetivos.</div><br><br>
+
+                </center>
+                        <div class="footer">
+                            <div class="container">
+                              <p>Feito por Pedro Porfirio Vieira \<a href="https://github.com/PedroPorfirioV/GYM-ALLY">GitHub</a>\ SPTech 2024</p>
+                            </div>
+                          </div>
+                    </div>
+                
+            </div>
+        </div>
+</body>
+</html>
+<script>
+
+    
+ function calcular() {
+    
+
+    //Recupere o valor da nova input pelo nome do id
+    // Agora vá para o método fetch logo abaixo
+    var objetivo = objetivo_ipt.value;
+    var genero = genero_ipt.value;
+    var altura = altura_ipt.value;
+    var dias = dias_ipt.value;
+    var idUsuario = sessionStorage.ID_USUARIO;
+
+    if (
+      objetivo == "" ||
+      genero =="" ||
+      altura ==""||
+      dias =="" ||
+      idUsuario == ""
+    ) {
+      alert(`Preencha todos os campos`);
+
+    }
+    // Enviando o valor da nova input
+    fetch("/formulario/Enviar", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        // crie um atributo que recebe o valor recuperado aqui
+        // Agora vá para o arquivo routes/usuario.js
+        objetivoServer: objetivo,
+        generoServer: genero,
+        alturaServer: altura,
+        diasServer: dias,
+        idUsuario: idUsuario
+      }),
+    })
+      .then(function (resposta) {
+        console.log("resposta: ", resposta);
+        
+        if (resposta.ok) {
+
+        } else {
+          alert ("Houve um erro ao tentar realizar o Formulario!");
+        }
+      })
+      .catch(function (resposta) {
+        console.log(`#ERRO: ${resposta}`);
+      });
+
+    return false;
+  }
+</script>

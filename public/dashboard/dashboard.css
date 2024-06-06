@@ -1,0 +1,481 @@
+body{
+    margin: 0;
+    background-color: #F6F4F3;
+}
+
+.hello{
+    font-family: "Open Sans", sans-serif;
+}
+
+.NAVMAE{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+.Nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.Nav .esquerda{
+    width: 62%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Nav .esquerda img{
+    width: 76px;
+    height: 90px;
+}
+.Nav .esquerda .titulo{
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 30px;
+}
+
+.Nav .direita{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.border{
+    width: 90%;
+    border-bottom: rgb(163, 157, 157) solid 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    font-family: "Open Sans", sans-serif;
+    color: #31241E ;
+}
+
+a{
+text-decoration: none;
+color:#31241E ;
+font-family: "Open Sans", sans-serif;
+font-weight: bolder;
+}
+
+.Nav .direita h3{
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+}
+
+    .c{
+    position:relative;
+    width: 400px;
+    padding:10px 10px;
+    border:none;
+    outline: none;
+    background:#D1C8C1;
+    color:black ;
+    font-weight: bold;
+    font-size: 1.00rem;
+    text-align: center;
+        
+    }
+ 
+    .btn{
+        color:white;
+        width: 100px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        display:flex ;
+        background-color: #D1C8C1;
+        font-weight: bold;
+        border-radius: 20px;
+        outline: 0px;
+        border:0px;
+    }
+
+    .btn, p {
+        font-size: 15px;
+        margin-top: 7px;
+        margin-bottom: 0;
+    }
+    .btn:hover{
+        background-color: #8a8785;
+        box-shadow: 0px 0px 10px #8a8785;
+        transform: translate(0px, -5px);
+        transition:transform 0.5s;
+    }
+
+    .texto{
+    width: 400px;
+    padding:10px 10px;
+    border:none;
+    outline: none;
+    background:#D1C8C1;
+    color:black ;
+    font-weight: bold;
+    font-size: 1.00rem;
+    font-family: "Open Sans", sans-serif;
+    }
+
+    .container h2{
+        font-size: 25px;
+        margin-top: 30px;
+        margin-bottom: -10px;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .container h1{
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .inputUser{
+    width: 610px;
+    height: 35px;
+    border:none;
+    outline: none;
+    background:#D1C8C1;
+    color:rgb(82, 79, 79) ;
+    font-weight: bold;
+    font-size: 1.00rem;
+    }
+
+    .inputUser2{
+        width: 600px;
+        height: 35px;
+        border:none;
+        outline: none;
+        background:#D1C8C1;
+        color:black ;
+        font-weight: bold;
+        font-size: 15px;
+        transform: translate(-5px,0px);
+        font-family: "Open Sans", sans-serif;
+        }
+
+    .box{
+        font-size: 25px;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .tata{
+        height: 40px;
+    }
+
+    .explica{
+        width: 600px;
+        height: 250px;
+        background:#D1C8C1;
+        color:black ;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .footer {
+        background-color: #8f8f8f;
+        width: 1340px;
+        height: 75px;
+        color: #fff;
+        display: flex;
+        font-size: 15px;
+      }
+      
+      .footer .container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .footer .container p{
+        display:flex;
+        justify-content: center;
+        transform: translate(500px,0px);
+        margin-top: 30px;
+      }
+
+      .footer1 {
+        background-color: #8f8f8f;
+        width: 1340px;
+        height: 75px;
+        color: #fff;
+        display: flex;
+        font-size: 15px;
+      }
+
+      .footer1 .container {
+        margin-left: 500px;
+        margin-top: 10px;
+        }
+
+      .mae{
+        height: 350px;
+        display: flex;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      .filho1{
+        background-color:#D1C8C1;
+        justify-content: flex-start;
+        height:300px;
+        width: 300px;
+        margin: 10px;
+        border-radius: 15PX;
+      }
+
+      .filho2{
+        background-color :#D1C8C1;
+        justify-content: center;
+        height: 300px;
+        width: 300px;
+        margin: 10px;
+        border-radius: 15PX;
+        border-radius: 15PX;
+      }
+
+      .filho3{
+        background-color:#D1C8C1;
+        justify-content: flex-end;
+        height:300px;
+        width: 300px;
+        margin: 10px;
+        border-radius: 15PX;
+        border-radius: 15PX;
+      }
+      
+      .filho4{
+        background-color:#D1C8C1;
+        justify-content: flex-end;
+        height:300px;
+        width: 300px;
+        margin: 10px;
+        border-radius: 15PX;
+      }
+
+      .foto{
+        height: 200px;
+        width: 200px;
+        color: rgb(0, 0, 0);
+        background-image:url(fotos/costas1.webp);
+        background-size: cover;
+        margin-bottom: 3PX;
+        margin-top:15PX;
+        border-radius: 15px;
+      }
+
+      .foto1{
+        height: 200px;
+        width: 200px;
+        color: rgb(0, 0, 0);
+        background-image:url(fotos/costas2.jpg);
+        background-size: cover;
+        margin-bottom: 3PX;
+        margin-top:15PX;
+        border-radius: 15px;
+      }
+
+      .foto2{
+        height: 200px;
+        width: 200px;
+        color: rgb(0, 0, 0);
+        background-image:url(fotos/costas3.jpg);
+        background-size: cover;
+        margin-bottom: 3PX;
+        margin-top:15PX;
+        border-radius: 15px;
+      }
+
+      .foto3{
+        height: 200px;
+        width: 200px;
+        color: rgb(0, 0, 0);
+        background-image:url(fotos/costas4.jpg);
+        background-size: cover;
+        margin-bottom: 3PX;
+        margin-top:15PX;
+        border-radius: 15px;
+      }
+
+      .foto4{
+        height: 200px;
+        width: 200px;
+        color: rgb(0, 0, 0);
+        background-image:url(fotos/biceps1.webp);
+        background-size: cover;
+        margin-bottom: 3PX;
+        margin-top:15PX;
+        border-radius: 15px;
+      }
+
+      .foto5{
+        height: 200px;
+        width: 200px;
+        color: rgb(0, 0, 0);
+        background-image:url(fotos/biceps2.webp);
+        background-size: cover;
+        margin-bottom: 3PX;
+        margin-top:15PX;
+        border-radius: 15px;
+      }
+
+      .foto6{
+        height: 200px;
+        width: 200px;
+        color: rgb(0, 0, 0);
+        background-image:url(fotos/biceps3.jpg);
+        background-size: cover;
+        margin-bottom: 3PX;
+        margin-top:15PX;
+        border-radius: 15px;
+      }
+
+      .foto7{
+        height: 200px;
+        width: 200px;
+        color: rgb(0, 0, 0);
+        background-image:url(fotos/biceps4.jpg);
+        background-size: cover;
+        margin-bottom: 3PX;
+        margin-top:15PX;
+        border-radius: 15px;
+      }
+
+      .foto8{
+        height: 200px;
+        width: 200px;
+        color: rgb(0, 0, 0);
+        background-image:url(fotos/peito1.jpg);
+        background-size: cover;
+        margin-bottom: 3PX;
+        margin-top:15PX;
+        border-radius: 15px;
+      }
+
+      .foto9{
+        height: 200px;
+        width: 200px;
+        color: rgb(0, 0, 0);
+        background-image:url(fotos/peito2.jpg);
+        background-size: cover;
+        margin-bottom: 3PX;
+        margin-top:15PX;
+        border-radius: 15px;
+      }
+
+      .foto10{
+        height: 200px;
+        width: 200px;
+        color: rgb(0, 0, 0);
+        background-image:url(fotos/peito3.jpg);
+        background-size: cover;
+        margin-bottom: 3PX;
+        margin-top:15PX;
+        border-radius: 15px;
+      }
+
+      .foto11{
+        height: 200px;
+        width: 200px;
+        color: rgb(0, 0, 0);
+        background-image:url(fotos/peito4.jpg);
+        background-size: cover;
+        margin-bottom: 3PX;
+        margin-top:15PX;
+        border-radius: 15px;
+      }
+
+      .foto12{
+        height: 200px;
+        width: 200px;
+        color: rgb(0, 0, 0);
+        background-image:url(fotos/triceps1.jpg);
+        background-size: cover;
+        margin-bottom: 3PX;
+        margin-top:15PX;
+        border-radius: 15px;
+      }
+
+      .foto13{
+        height: 200px;
+        width: 200px;
+        color: rgb(0, 0, 0);
+        background-image:url(fotos/triceps2.png);
+        background-size: cover;
+        margin-bottom: 3PX;
+        margin-top:15PX;
+        border-radius: 15px;
+      }
+
+      .foto14{
+        height: 200px;
+        width: 200px;
+        color: rgb(0, 0, 0);
+        background-image:url(fotos/triceps3.webp);
+        background-size: cover;
+        margin-bottom: 3PX;
+        margin-top:15PX;
+        border-radius: 15px;
+      }
+
+      .foto15{
+        height: 200px;
+        width: 200px;
+        color: rgb(0, 0, 0);
+        background-image:url(fotos/triceps4.jpg);
+        background-size: cover;
+        margin-bottom: 3PX;
+        margin-top:15PX;
+        border-radius: 15px;
+      }
+
+      .foto16{
+        height: 200px;
+        width: 200px;
+        color: rgb(0, 0, 0);
+        background-image:url(fotos/ombro1.jpg);
+        background-size: cover;
+        margin-bottom: 3PX;
+        margin-top:15PX;
+        border-radius: 15px;
+      }
+
+      .foto17{
+        height: 200px;
+        width: 200px;
+        color: rgb(0, 0, 0);
+        background-image:url(fotos/ombro2.jpg);
+        background-size: cover;
+        margin-bottom: 3PX;
+        margin-top:15PX;
+        border-radius: 15px;
+      }
+
+      .foto18{
+        height: 200px;
+        width: 200px;
+        color: rgb(0, 0, 0);
+        background-image:url(fotos/ombro3.gif);
+        background-size: cover;
+        margin-bottom: 3PX;
+        margin-top:15PX;
+        border-radius: 15px;
+      }
+
+      .foto19{
+        height: 200px;
+        width: 200px;
+        color: rgb(0, 0, 0);
+        background-image:url(fotos/ombro4.jpg);
+        background-size: cover;
+        margin-bottom: 3PX;
+        margin-top:15PX;
+        border-radius: 15px;
+      }
+
+
+      h1{
+        font-family: "Open Sans", sans-serif;
+      }
+
+
+
