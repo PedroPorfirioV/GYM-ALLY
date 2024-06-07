@@ -29,7 +29,7 @@ CREATE TABLE formulario (
 idFormulario int primary key auto_increment,
 objetivo varchar(45),
 genero varchar(45),
-altura decimal(2,2),
+altura varchar(2),
 dias int,
 fkUsuario int,
 FOREIGN KEY (fkUsuario) REFERENCES usuario(id)

@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!-- scripts do Chart.js - 2022-1 -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -23,56 +23,67 @@
     <script src="https://kit.fontawesome.com/9f7414eb10.js" crossorigin="anonymous"></script>
 </head>
 
-    <body>
-        <div class="NAVMAE">
-            <div class="Nav">
-                <div class="esquerda">
-                    <img src="../assets/Logo.PNG" alt="">
-                    <div class="titulo">
+<body>
+    <div class="NAVMAE">
+        <div class="Nav">
+            <div class="esquerda">
+                <img src="../assets/Logo.PNG" alt="">
+                <div class="titulo">
                     <a href="">Gym</a>
                     <a href="">Ally</a>
-                    </div>
-    
-                    <a href="mural.html">Mural</a>
-                    <a href="dashboard.html">Dashboard</a>
-                    <a href="Formulario.html">Formulario</a>
-                    <a href="Exercicios.html">Exercicios </a>
                 </div>
-    
-                <div class="direita">
-                    <div onclick="limparSessao()">
-                        <h3>Sair</h3>
-                    </div>
-                </div>
+
+                <a href="mural.html">Mural</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="Formulario.html">Formulario</a>
+                <a href="Exercicios.html">Exercicios </a>
             </div>
-            <div class="border"></div><br>
-    
-            <div class="dash">
-                <div id="alerta">
-                </div>
-    
-                <div class="btns-dash" id="btnAquario">
-                </div>
-                <div id="graficos">
-                    <canvas id="myChartCanvas"></canvas>
-                    <canvas id="myChartCanvas2"></canvas>
+
+            <div class="direita">
+                <div onclick="limparSessao()">
+                    <h3>Sair</h3>
                 </div>
             </div>
         </div>
+        <div class="border"></div><br>
+
+        <div class="dash">
+            <div id="alerta">
+            </div>
+        </div>
+    </div>
+
+    <div id="graficos" class="grafico">
+        <div id="card-left">
+            <div class="grafico1">
+                <center>
+                    <p>Objetivo dos usuários</p>
+                </center><br><br>
+                <canvas id="myChartCanvas"></canvas>
+            </div>
+        </div>
+        <div id="card-left">
+            <div class="grafico2">
+                <p>Gênero dos usuários</p>
+                <canvas id="myChartCanvas2"></canvas>
+            </div>
+        </div>
+    </div>
+    </div>
 
 </body>
 
 </html>
 
 <script>
-    
+
 
     let proximaAtualizacao;
 
     window.onload = obterDadosGrafico();
 
 
-function obterDadosGrafico() {
+    function obterDadosGrafico() {
 
         fetch(`/formulario/grafico1`, { cache: 'no-store' }).then(function (response) {
             if (response.ok) {
@@ -92,24 +103,24 @@ function obterDadosGrafico() {
             });
     }
 
-    
+
     function plotarGrafico(resposta) {
 
         console.log('iniciando plotagem do gráfico...');
 
-        
+
         let labels = [];
 
-        
+
         let dados = {
             labels: labels,
             datasets: [{
-                label: '',
+                label: 'Peso',
                 data: [],
                 fill: false,
-                borderColor: 'white',
-                backgroundColor:["#F2D335", "#55A6D9"],
-                  tension: 0.1
+                borderColor: 'black',
+                backgroundColor: ["#add8e6", " #ffb6c1", "#fbe870"],
+                tension: 0.1
             },]
         };
 
@@ -117,7 +128,7 @@ function obterDadosGrafico() {
         console.log('Estes dados foram recebidos pela funcao "obterDadosGrafico" e passados para "plotarGrafico":')
         console.log(resposta)
 
-       
+
         for (i = 0; i < resposta.length; i++) {
             var registro = resposta[i];
             labels.push(registro.objetivo);
@@ -132,14 +143,14 @@ function obterDadosGrafico() {
         console.log(dados.datasets)
         console.log('----------------------------------------------')
 
-       
+
         const config = {
             type: 'bar',
             data: dados,
-            
+
         };
 
-       
+
         let myChart = new Chart(
             document.getElementById(`myChartCanvas`),
             config
@@ -148,79 +159,79 @@ function obterDadosGrafico() {
 
     let proximaAtualizacao2;
 
-window.onload = obterDadosGrafico2();
+    window.onload = obterDadosGrafico2();
 
 
-function obterDadosGrafico2() {
+    function obterDadosGrafico2() {
 
-    fetch(`/formulario/grafico2`, { cache: 'no-store' }).then(function (response) {
-        if (response.ok) {
-            response.json().then(function (resposta) {
-                console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
-                resposta.reverse();
+        fetch(`/formulario/grafico2`, { cache: 'no-store' }).then(function (response) {
+            if (response.ok) {
+                response.json().then(function (resposta) {
+                    console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+                    resposta.reverse();
 
-                plotarGrafico2(resposta);
+                    plotarGrafico2(resposta);
 
+                });
+            } else {
+                console.error('Nenhum dado encontrado ou erro na API');
+            }
+        })
+            .catch(function (error) {
+                console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
             });
-        } else {
-            console.error('Nenhum dado encontrado ou erro na API');
+    }
+
+    function plotarGrafico2(resposta) {
+
+        console.log('iniciando plotagem do gráfico...');
+
+
+        let labels = [];
+
+
+        let dados = {
+            labels: labels,
+            datasets: [{
+                label: '',
+                data: [],
+                fill: false,
+                borderColor:'black',
+                backgroundColor: ["#ADD8E6", "#FFB6C1"],
+                tension: 0.1
+            },]
+        };
+
+        console.log('----------------------------------------------')
+        console.log('Estes dados foram recebidos pela funcao "obterDadosGrafico" e passados para "plotarGrafico":')
+        console.log(resposta)
+
+
+        for (i = 0; i < resposta.length; i++) {
+            var registro = resposta[i];
+            labels.push(registro.genero);
+            dados.datasets[0].data.push(registro.gen);
         }
-    })
-        .catch(function (error) {
-            console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
-        });
-}
 
-function plotarGrafico2(resposta) {
-
-console.log('iniciando plotagem do gráfico...');
-
-
-let labels = [];
+        console.log('----------------------------------------------')
+        console.log('O gráfico será plotado com os respectivos valores:')
+        console.log('Labels:')
+        console.log(labels)
+        console.log('Dados:')
+        console.log(dados.datasets)
+        console.log('----------------------------------------------')
 
 
-let dados = {
-    labels: labels,
-    datasets: [{
-        label: '',
-        data: [],
-        fill: false,
-        borderColor: 'white',
-        backgroundColor:["#94E1F2","#F2D335", "#55A6D9", "#D91E2E"],
-          tension: 0.1
-    },]
-};
+        const config = {
+            type: 'pie',
+            data: dados,
 
-console.log('----------------------------------------------')
-console.log('Estes dados foram recebidos pela funcao "obterDadosGrafico" e passados para "plotarGrafico":')
-console.log(resposta)
+        };
 
 
-for (i = 0; i < resposta.length; i++) {
-    var registro = resposta[i];
-    labels.push(registro.genero);
-    dados.datasets[0].data.push(registro.gen);
-}
-
-console.log('----------------------------------------------')
-console.log('O gráfico será plotado com os respectivos valores:')
-console.log('Labels:')
-console.log(labels)
-console.log('Dados:')
-console.log(dados.datasets)
-console.log('----------------------------------------------')
-
-
-const config = {
-    type: 'pie',
-    data: dados,
-    
-};
-
-
-let myChart = new Chart(
-    document.getElementById(`myChartCanvas2`),
-    config
-);
-}
+        let myChart = new Chart(
+            document.getElementById(`myChartCanvas2`),
+            config
+        );
+    }
 </script>
