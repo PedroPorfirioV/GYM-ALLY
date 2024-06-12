@@ -2,113 +2,117 @@
 <html lang="ptbr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORMULARIO</title>
-    <link rel="stylesheet" href='dashboard.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-        <script src="../js/sessao.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMULARIO</title>
+  <link rel="stylesheet" href='dashboard.css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <script src="../js/sessao.js"></script>
 </head>
 
 <body>
-    <div class="NAVMAE">
-        <div class="Nav">
-            <div class="esquerda">
-                <img src="../assets/Logo.PNG" alt="">
-                <div class="titulo">
-                <a href="">Gym</a>
-                <a href="">Ally</a>
-                </div>
-
-                <a href="mural.html">Mural</a>
-                <a href="dashboard.html">Dashboard</a>
-                <a href="Formulario.html">Formulario</a>
-                <a href="Exercicios.html">Exercicios </a>
-            </div>
-
-            <div class="direita">
-                <div onclick="limparSessao()">
-                    <h3>Sair</h3>
-                </div>
-            </div>
+  <div class="NAVMAE">
+    <div class="Nav">
+      <div class="esquerda">
+        <img src="../assets/Logo.PNG" alt="">
+        <div class="titulo">
+          <a href="">Gym</a>
+          <a href="">Ally</a>
         </div>
-        <div class="border"></div><br>
-        <center>
-            <div class="tata"></div>
+
+        <a href="mural.html">Mural</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="Formulario.html">Formulario</a>
+        <a href="Exercicios.html">Exercicios </a>
+      </div>
+
+      <div class="direita">
+        <div onclick="limparSessao()">
+          <h3>Sair</h3>
+        </div>
+      </div>
+    </div>
+    <div class="border"></div><br>
+    <center>
+      <div class="tata"></div>
+      <div>
         <div>
-            <div>
-               
-                    <legend><b class="box">IPersonal</b></legend>
-                    <br>
-                    <div class="inputBox">
-                        <select id="objetivo_ipt" class="inputUser" required>
-                            <option selected disabled hidden value="">Qual seu objetivo?</option>
-                            <option value="Perder">Perder peso</option>
-                            <option value="Manter">Manter peso</option>
-                            <option value="Ganhar">Ganhar peso</option>
-                        </select>
-                    </div>
-                    <br><br>
-                    <div class="genero">
-                        <select id="genero_ipt" class="inputUser" required>
-                            <option selected disabled hidden value="">Qual seu gênero?</option>
-                            <option value="Homem">Homem</option>
-                            <option value="Mulher">Mulher</option>
-                        </select>
-                    </div><br><br>
-                    <div class="altura">
-                        <select id="altura_ipt" class="inputUser" required>
-                            <option selected disabled hidden value="">Qual sua altura?</option>
-                            <option value="PP">1.40m até 1.50m</option>
-                            <option value="P">1.51m até 1.60m</option>
-                            <option value="M">1.61m até 1.70m</option>
-                            <option value="G">1.71m até 1.80m</option>
-                            <option value="GG">1.81m até 1.90m</option>
-                            <option value="H">1.91m até 2.00m</option>
-                            <option value="HH">2.01m até 2.10m</option>
-                        </select>
-                    </div>
-                    <br><br>
-                    <div class="inputUser2">
-                        <select id="dias_ipt" class="inputUser" required>
-                            <option selected disabled hidden value="">Quantos dias você tem disponivel para treinar?</option>
-                            <option value="1">1 dia</option>
-                            <option value="2">2 dias</option>
-                            <option value="3">3 dias</option>
-                            <option value="4">4 dias</option>
-                            <option value="5">5 dias</option>
-                            <option value="6">6 dias</option>
-                            <option value="7">7 dias</option>
-                        </select>
-                    </div>
-                    </div>
-                    <div id="alertMessage" class="alert"></div>
-                    <br>
-                    <button onclick="calcular()" class="btn">Enviar</button>
-                    <br>
-                    <div class="explica"><br>Bem vindo ao IPersonal, após selecionar as alternativas que encaixam no seu objetivo, aqui nessa caixa
-                        irá aparecer uma recomendação de treino e dieta semanal para tentar ao maximo te ajudar a alcansar seus objetivos.</div><br><br>
 
-                </center>
-                        <div class="footer">
-                            <div class="container">
-                              <p>Feito por Pedro Porfirio Vieira \<a href="https://github.com/PedroPorfirioV/GYM-ALLY">GitHub</a>\ SPTech 2024</p>
-                            </div>
-                          </div>
-                    </div>
-                
-            </div>
+          <legend><b class="box">IPersonal</b></legend>
+          <br>
+          <div class="inputBox">
+            <select id="objetivo_ipt" class="inputUser" required>
+              <option selected disabled hidden value="">Qual seu objetivo?</option>
+              <option value="Perder">Perder peso</option>
+              <option value="Manter">Manter peso</option>
+              <option value="Ganhar">Ganhar peso</option>
+            </select>
+          </div>
+          <br><br>
+          <div class="genero">
+            <select id="genero_ipt" class="inputUser" required>
+              <option selected disabled hidden value="">Qual seu gênero?</option>
+              <option value="Homem">Homem</option>
+              <option value="Mulher">Mulher</option>
+            </select>
+          </div><br><br>
+          <div class="altura">
+            <select id="altura_ipt" class="inputUser" required>
+              <option selected disabled hidden value="">Qual sua altura?</option>
+              <option value="PP">1.40m até 1.50m</option>
+              <option value="P">1.51m até 1.60m</option>
+              <option value="M">1.61m até 1.70m</option>
+              <option value="G">1.71m até 1.80m</option>
+              <option value="GG">1.81m até 1.90m</option>
+              <option value="H">1.91m até 2.00m</option>
+              <option value="HH">2.01m até 2.10m</option>
+            </select>
+          </div>
+          <br><br>
+          <div class="inputUser2">
+            <select id="dias_ipt" class="inputUser" required>
+              <option selected disabled hidden value="">Quantos dias você tem disponivel para treinar?</option>
+              <option value="1">1 dia</option>
+              <option value="2">2 dias</option>
+              <option value="3">3 dias</option>
+              <option value="4">4 dias</option>
+              <option value="5">5 dias</option>
+              <option value="6">6 dias</option>
+              <option value="7">7 dias</option>
+            </select>
+          </div>
         </div>
+        <div id="alertMessage" class="alert"></div>
+        <br>
+        <button onclick="calcular()" class="btn">Enviar</button>
+        <br>
+        <div id="mensagem" class="explica"><br>Bem vindo ao IPersonal, após selecionar as alternativas que encaixam no
+          seu objetivo, aqui nessa caixa
+          irá aparecer uma recomendação de treino e dieta semanal para tentar ao maximo te ajudar a alcansar seus
+          objetivos.</div><br><br>
+
+    </center>
+    <div class="footer">
+      <div class="container">
+        <p>Feito por Pedro Porfirio Vieira \<a href="https://github.com/PedroPorfirioV/GYM-ALLY">GitHub</a>\ SPTech 2024
+        </p>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
 </body>
+
 </html>
 <script>
 
-    
- function calcular() {
-    
+
+  function calcular() {
+
 
     //Recupere o valor da nova input pelo nome do id
     // Agora vá para o método fetch logo abaixo
@@ -118,16 +122,252 @@
     var dias = dias_ipt.value;
     var idUsuario = sessionStorage.ID_USUARIO;
 
+    var texto = "";
+    var alimentacao="";
+    var descanso="";
+
     if (
       objetivo == "" ||
-      genero =="" ||
-      altura ==""||
-      dias =="" ||
+      genero == "" ||
+      altura == "" ||
+      dias == "" ||
       idUsuario == ""
     ) {
       alert(`Preencha todos os campos`);
-
+      return;
     }
+
+    if (objetivo == "Perder") {
+      if (genero == "Homem") {
+        if (dias == 1) {
+       texto= "1-Treino de Corpo Inteiro<br>Aquecimento (10 minutos):Pular corda ou correr no lugar - 5 minutos<br>Alongamentos dinâmicos (braços, pernas, tronco) - 5 minutos<br>Exercícios Principais:<br>Agachamento<br>Séries: 3<br>Repetições: 10-12<br>Supino com halteres<br>Séries: 3<br>Repetições: 10-12<br>Remada com Barra <br>Séries: 3<br>Repetições: 10-12<br>Desenvolvimento<br>Séries: 3<br>Repetições: 10-12<br>Levantamento Terra sumô<br>Séries: 3<br>Repetições: 10-12<br>Rosca Martelo<br>Séries: 3<br>Repetições: 10-12<br>Passada<br>Séries: 3<br>Repetições: 12-15 (cada perna)<br>Crunches<br>Séries: 3<br>Repetições: 15-20<br>Dicas Adicionais:<br>Forma Correta: Para execução correta veja os videos da pagina “exercicios”.<br>Peso Adequado: Escolha um peso que seja desafiador, mas que permita completar todas as repetições com boa forma.<br>Hidratação: Beba bastante água antes, durante e após o treino.";
+       alimentacao="<br>Alimentação: Com o objetivo de perder peso, reduza de 200 a 400 calorias do seu dia a dia para te auxiliar na busca do seu objetivo e também coma 2 gramas de proteína para cada kg do seu corpo, se alimente bem e de forma saudável.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série, o descanso é essencial para a recuperação muscular.";
+        }
+        if (dias == 2) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de perder peso, reduza de 200 a 400 calorias do seu dia a dia para te auxiliar na busca do seu objetivo e também coma 2 gramas de proteína para cada kg do seu corpo, se alimente bem e de forma saudável.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série, o descanso é essencial para a recuperação muscular.";
+        }
+        if (dias == 3) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de perder peso, reduza de 200 a 400 calorias do seu dia a dia para te auxiliar na busca do seu objetivo e também coma 2 gramas de proteína para cada kg do seu corpo, se alimente bem e de forma saudável.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série, o descanso é essencial para a recuperação muscular.";
+        }
+        if (dias == 4) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de perder peso, reduza de 200 a 400 calorias do seu dia a dia para te auxiliar na busca do seu objetivo e também coma 2 gramas de proteína para cada kg do seu corpo, se alimente bem e de forma saudável.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série,descanse tambem de dois em dois dias, o descanso é essencial para a recuperação muscular.";
+        }
+        if (dias == 5) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de perder peso, reduza de 200 a 400 calorias do seu dia a dia para te auxiliar na busca do seu objetivo e também coma 2 gramas de proteína para cada kg do seu corpo, se alimente bem e de forma saudável.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série,descanse tambem de dois em dois dias, o descanso é essencial para a recuperação muscular.";
+        }
+        if (dias == 6) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de perder peso, reduza de 200 a 400 calorias do seu dia a dia para te auxiliar na busca do seu objetivo e também coma 2 gramas de proteína para cada kg do seu corpo, se alimente bem e de forma saudável.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série,descanse tambem de dois em dois dias,o descanso é essencial para a recuperação muscular.";
+        }
+        if (dias == 7) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de perder peso, reduza de 200 a 400 calorias do seu dia a dia para te auxiliar na busca do seu objetivo e também coma 2 gramas de proteína para cada kg do seu corpo, se alimente bem e de forma saudável.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série,descanse tambem de dois em dois dias, o descanso é essencial para a recuperação muscular.";
+        }
+      }
+      if (genero == "Mulher") {
+  if (dias == 1) {
+    texto= "1-Treino de Corpo Inteiro<br>Aquecimento (10 minutos):Pular corda ou correr no lugar - 5 minutos<br>Alongamentos dinâmicos (braços, pernas, tronco) - 5 minutos<br>Exercícios Principais:<br>Agachamento<br>Séries: 3<br>Repetições: 10-12<br>Supino com halteres<br>Séries: 3<br>Repetições: 10-12<br>Remada com Barra <br>Séries: 3<br>Repetições: 10-12<br>Desenvolvimento<br>Séries: 3<br>Repetições: 10-12<br>Levantamento Terra sumô<br>Séries: 3<br>Repetições: 10-12<br>Rosca Martelo<br>Séries: 3<br>Repetições: 10-12<br>Passada<br>Séries: 3<br>Repetições: 12-15 (cada perna)<br>Crunches<br>Séries: 3<br>Repetições: 15-20<br>Dicas Adicionais:<br>Forma Correta: Para execução correta veja os videos da pagina “exercicios”.<br>Peso Adequado: Escolha um peso que seja desafiador, mas que permita completar todas as repetições com boa forma.<br>Hidratação: Beba bastante água antes, durante e após o treino.";
+       alimentacao="<br>Alimentação: Com o objetivo de perder peso, reduza de 200 a 400 calorias do seu dia a dia para te auxiliar na busca do seu objetivo e também coma 2 gramas de proteína para cada kg do seu corpo, se alimente bem e de forma saudável.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série, o descanso é essencial para a recuperação muscular.";
+        }
+        if (dias == 2) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de perder peso, reduza de 200 a 400 calorias do seu dia a dia para te auxiliar na busca do seu objetivo e também coma 2 gramas de proteína para cada kg do seu corpo, se alimente bem e de forma saudável.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série, o descanso é essencial para a recuperação muscular.";
+        }
+        if (dias == 3) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de perder peso, reduza de 200 a 400 calorias do seu dia a dia para te auxiliar na busca do seu objetivo e também coma 2 gramas de proteína para cada kg do seu corpo, se alimente bem e de forma saudável.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série, o descanso é essencial para a recuperação muscular.";
+        }
+        if (dias == 4) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de perder peso, reduza de 200 a 400 calorias do seu dia a dia para te auxiliar na busca do seu objetivo e também coma 2 gramas de proteína para cada kg do seu corpo, se alimente bem e de forma saudável.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série,descanse tambem de dois em dois dias, o descanso é essencial para a recuperação muscular.";
+        }
+        if (dias == 5) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de perder peso, reduza de 200 a 400 calorias do seu dia a dia para te auxiliar na busca do seu objetivo e também coma 2 gramas de proteína para cada kg do seu corpo, se alimente bem e de forma saudável.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série,descanse tambem de dois em dois dias, o descanso é essencial para a recuperação muscular.";
+        }
+        if (dias == 6) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de perder peso, reduza de 200 a 400 calorias do seu dia a dia para te auxiliar na busca do seu objetivo e também coma 2 gramas de proteína para cada kg do seu corpo, se alimente bem e de forma saudável.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série,descanse tambem de dois em dois dias, o descanso é essencial para a recuperação muscular.";
+        }
+        if (dias == 7) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de perder peso, reduza de 200 a 400 calorias do seu dia a dia para te auxiliar na busca do seu objetivo e também coma 2 gramas de proteína para cada kg do seu corpo, se alimente bem e de forma saudável.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série,descanse tambem de dois em dois dias, o descanso é essencial para a recuperação muscular.";
+        }
+      }
+
+    } else if (objetivo == "Manter") {
+      if (genero == "Homem") {
+        if (dias == 1) {
+          texto= "1-Treino de Corpo Inteiro<br>Aquecimento (10 minutos):Pular corda ou correr no lugar - 5 minutos<br>Alongamentos dinâmicos (braços, pernas, tronco) - 5 minutos<br>Exercícios Principais:<br>Agachamento<br>Séries: 3<br>Repetições: 10-12<br>Supino com halteres<br>Séries: 3<br>Repetições: 10-12<br>Remada com Barra <br>Séries: 3<br>Repetições: 10-12<br>Desenvolvimento<br>Séries: 3<br>Repetições: 10-12<br>Levantamento Terra sumô<br>Séries: 3<br>Repetições: 10-12<br>Rosca Martelo<br>Séries: 3<br>Repetições: 10-12<br>Passada<br>Séries: 3<br>Repetições: 12-15 (cada perna)<br>Crunches<br>Séries: 3<br>Repetições: 15-20<br>Dicas Adicionais:<br>Forma Correta: Para execução correta veja os videos da pagina “exercicios”.<br>Peso Adequado: Escolha um peso que seja desafiador, mas que permita completar todas as repetições com boa forma.<br>Hidratação: Beba bastante água antes, durante e após o treino.";
+       alimentacao="<br>Alimentação: Com o objetivo de manter o peso,se alimente bem e de forma saudável e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série, o descanso é essencial para a recuperação muscular."
+        }
+        if (dias == 2) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de manter o peso,se alimente bem e de forma saudável e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série, o descanso é essencial para a recuperação muscular."
+        }
+        if (dias == 3) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de manter o peso,se alimente bem e de forma saudável e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série, o descanso é essencial para a recuperação muscular."
+        }
+        if (dias == 4) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de manter o peso,se alimente bem e de forma saudável e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série,descanse tambem de dois em dois dias, o descanso é essencial para a recuperação muscular."
+        }
+        if (dias == 5) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de manter o peso,se alimente bem e de forma saudável e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série,descanse tambem de dois em dois dias, o descanso é essencial para a recuperação muscular."
+        }
+        if (dias == 6) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de manter o peso,se alimente bem e de forma saudável e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série,descanse tambem de dois em dois dias, o descanso é essencial para a recuperação muscular."
+        }
+        if (dias == 7) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de manter o peso,se alimente bem e de forma saudável e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série,descanse tambem de dois em dois dias, o descanso é essencial para a recuperação muscular."
+        }
+      }
+      if (genero == "Mulher") {
+        if (dias == 1) {
+          texto= "1-Treino de Corpo Inteiro<br>Aquecimento (10 minutos):Pular corda ou correr no lugar - 5 minutos<br>Alongamentos dinâmicos (braços, pernas, tronco) - 5 minutos<br>Exercícios Principais:<br>Agachamento<br>Séries: 3<br>Repetições: 10-12<br>Supino com halteres<br>Séries: 3<br>Repetições: 10-12<br>Remada com Barra <br>Séries: 3<br>Repetições: 10-12<br>Desenvolvimento<br>Séries: 3<br>Repetições: 10-12<br>Levantamento Terra sumô<br>Séries: 3<br>Repetições: 10-12<br>Rosca Martelo<br>Séries: 3<br>Repetições: 10-12<br>Passada<br>Séries: 3<br>Repetições: 12-15 (cada perna)<br>Crunches<br>Séries: 3<br>Repetições: 15-20<br>Dicas Adicionais:<br>Forma Correta: Para execução correta veja os videos da pagina “exercicios”.<br>Peso Adequado: Escolha um peso que seja desafiador, mas que permita completar todas as repetições com boa forma.<br>Hidratação: Beba bastante água antes, durante e após o treino.";
+       alimentacao="<br>Alimentação: Com o objetivo de manter o peso,se alimente bem e de forma saudável e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série, o descanso é essencial para a recuperação muscular." 
+        }
+        if (dias == 2) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de manter o peso,se alimente bem e de forma saudável e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série, o descanso é essencial para a recuperação muscular."
+        }
+        if (dias == 3) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de manter o peso,se alimente bem e de forma saudável e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série, o descanso é essencial para a recuperação muscular."
+        }
+        if (dias == 4) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de manter o peso,se alimente bem e de forma saudável e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série,descanse tambem de dois em dois dias, o descanso é essencial para a recuperação muscular."
+        }
+        if (dias == 5) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de manter o peso,se alimente bem e de forma saudável e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série,descanse tambem de dois em dois dias, o descanso é essencial para a recuperação muscular."
+        }
+        if (dias == 6) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de manter o peso,se alimente bem e de forma saudável e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série,descanse tambem de dois em dois dias, o descanso é essencial para a recuperação muscular."
+        }
+        if (dias == 7) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de manter o peso,se alimente bem e de forma saudável e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série,descanse tambem de dois em dois dias, o descanso é essencial para a recuperação muscular."
+        }
+      }
+
+    } else if (objetivo == "Ganhar") {
+      if (genero == "Homem") {
+        if (dias == 1) {
+          texto= "1-Treino de Corpo Inteiro<br>Aquecimento (10 minutos):Pular corda ou correr no lugar - 5 minutos<br>Alongamentos dinâmicos (braços, pernas, tronco) - 5 minutos<br>Exercícios Principais:<br>Agachamento<br>Séries: 3<br>Repetições: 10-12<br>Supino com halteres<br>Séries: 3<br>Repetições: 10-12<br>Remada com Barra <br>Séries: 3<br>Repetições: 10-12<br>Desenvolvimento<br>Séries: 3<br>Repetições: 10-12<br>Levantamento Terra sumô<br>Séries: 3<br>Repetições: 10-12<br>Rosca Martelo<br>Séries: 3<br>Repetições: 10-12<br>Passada<br>Séries: 3<br>Repetições: 12-15 (cada perna)<br>Crunches<br>Séries: 3<br>Repetições: 15-20<br>Dicas Adicionais:<br>Forma Correta: Para execução correta veja os videos da pagina “exercicios”.<br>Peso Adequado: Escolha um peso que seja desafiador, mas que permita completar todas as repetições com boa forma.<br>Hidratação: Beba bastante água antes, durante e após o treino.";
+       alimentacao="<br>Alimentação: Com o objetivo de ganhar o peso,se alimente bem e de forma saudável comendo 400 a 800 calorias a mais no seu dia a dia e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série, o descanso é essencial para a recuperação muscular."
+        }
+        if (dias == 2) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de ganhar o peso,se alimente bem e de forma saudável comendo 400 a 800 calorias a mais no seu dia a dia e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série, o descanso é essencial para a recuperação muscular."
+        }
+        if (dias == 3) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de ganhar o peso,se alimente bem e de forma saudável comendo 400 a 800 calorias a mais no seu dia a dia e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série, o descanso é essencial para a recuperação muscular."
+        }
+        if (dias == 4) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de ganhar o peso,se alimente bem e de forma saudável comendo 400 a 800 calorias a mais no seu dia a dia e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série,descanse tambem de dois em dois dias, o descanso é essencial para a recuperação muscular."
+        }
+        if (dias == 5) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de ganhar o peso,se alimente bem e de forma saudável comendo 400 a 800 calorias a mais no seu dia a dia e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série,descanse tambem de dois em dois dias, o descanso é essencial para a recuperação muscular."
+        }
+        if (dias == 6) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de ganhar o peso,se alimente bem e de forma saudável comendo 400 a 800 calorias a mais no seu dia a dia e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série,descanse tambem de dois em dois dias, o descanso é essencial para a recuperação muscular."
+        }
+        if (dias == 7) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de ganhar o peso,se alimente bem e de forma saudável comendo 400 a 800 calorias a mais no seu dia a dia e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série,descanse tambem de dois em dois dias, o descanso é essencial para a recuperação muscular."
+        }
+      }
+      if (genero == "Mulher") {
+        if (dias == 1) {
+          texto= "1-Treino de Corpo Inteiro<br>Aquecimento (10 minutos):Pular corda ou correr no lugar - 5 minutos<br>Alongamentos dinâmicos (braços, pernas, tronco) - 5 minutos<br>Exercícios Principais:<br>Agachamento<br>Séries: 3<br>Repetições: 10-12<br>Supino com halteres<br>Séries: 3<br>Repetições: 10-12<br>Remada com Barra <br>Séries: 3<br>Repetições: 10-12<br>Desenvolvimento<br>Séries: 3<br>Repetições: 10-12<br>Levantamento Terra sumô<br>Séries: 3<br>Repetições: 10-12<br>Rosca Martelo<br>Séries: 3<br>Repetições: 10-12<br>Passada<br>Séries: 3<br>Repetições: 12-15 (cada perna)<br>Crunches<br>Séries: 3<br>Repetições: 15-20<br>Dicas Adicionais:<br>Forma Correta: Para execução correta veja os videos da pagina “exercicios”.<br>Peso Adequado: Escolha um peso que seja desafiador, mas que permita completar todas as repetições com boa forma.<br>Hidratação: Beba bastante água antes, durante e após o treino.";
+       alimentacao="<br>Alimentação: Com o objetivo de ganhar o peso,se alimente bem e de forma saudável comendo 400 a 800 calorias a mais no seu dia a dia e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série, o descanso é essencial para a recuperação muscular."
+        }
+        if (dias == 2) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de ganhar o peso,se alimente bem e de forma saudável comendo 400 a 800 calorias a mais no seu dia a dia e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série, o descanso é essencial para a recuperação muscular."
+        }
+        if (dias == 3) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de ganhar o peso,se alimente bem e de forma saudável comendo 400 a 800 calorias a mais no seu dia a dia e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série, o descanso é essencial para a recuperação muscular."
+        }
+        if (dias == 4) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de ganhar o peso,se alimente bem e de forma saudável comendo 400 a 800 calorias a mais no seu dia a dia e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série,descanse tambem de dois em dois dias, o descanso é essencial para a recuperação muscular."
+        }
+        if (dias == 5) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de ganhar o peso,se alimente bem e de forma saudável comendo 400 a 800 calorias a mais no seu dia a dia e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série,descanse tambem de dois em dois dias, o descanso é essencial para a recuperação muscular."
+        }
+        if (dias == 6) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de ganhar o peso,se alimente bem e de forma saudável comendo 400 a 800 calorias a mais no seu dia a dia e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série,descanse tambem de dois em dois dias, o descanso é essencial para a recuperação muscular."
+        }
+        if (dias == 7) {
+          texto= "";
+       alimentacao="<br>Alimentação: Com o objetivo de ganhar o peso,se alimente bem e de forma saudável comendo 400 a 800 calorias a mais no seu dia a dia e também coma 2 gramas de proteína para cada kg do seu corpo.";
+       descanso="<br> Descanso: Descanse de 2 a 3 minutos para cada nova série,descanse tambem de dois em dois dias, o descanso é essencial para a recuperação muscular."
+        }  
+      }
+    }
+
+    mensagem.innerHTML = `${texto} ${alimentacao} ${descanso}`;
+
     // Enviando o valor da nova input
     fetch("/formulario/Enviar", {
       method: "POST",
@@ -146,12 +386,12 @@
     })
       .then(function (resposta) {
         console.log("resposta: ", resposta);
-        
+
         if (resposta.ok) {
-          alert ("Formulario enviado com sucesso, confira a dashboard");
+          alert("Formulario enviado com sucesso, confira a dashboard");
 
         } else {
-          alert ("Houve um erro ao tentar realizar o Formulario!");
+          alert("Houve um erro ao tentar realizar o Formulario!");
         }
       })
       .catch(function (resposta) {
